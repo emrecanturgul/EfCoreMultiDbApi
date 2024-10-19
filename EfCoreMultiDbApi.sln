@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlWebApi", "SqlConnection\SqlWebApi.csproj", "{1267746F-8C85-476C-944C-1467920E5D93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlWebApi", "SqlConnection\SqlWebApi.csproj", "{1267746F-8C85-476C-944C-1467920E5D93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSqlConnection", "PostgreSqlConnection\PostgreSqlConnection.csproj", "{9877ED95-9766-4FF8-BBEC-9ACF1DBE532C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgre_Sql_Connection", "Postgre_Sql_Connection\Postgre_Sql_Connection.csproj", "{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{1267746F-8C85-476C-944C-1467920E5D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1267746F-8C85-476C-944C-1467920E5D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1267746F-8C85-476C-944C-1467920E5D93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9877ED95-9766-4FF8-BBEC-9ACF1DBE532C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9877ED95-9766-4FF8-BBEC-9ACF1DBE532C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9877ED95-9766-4FF8-BBEC-9ACF1DBE532C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9877ED95-9766-4FF8-BBEC-9ACF1DBE532C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

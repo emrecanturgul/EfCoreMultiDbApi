@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using PostgreSqlConnection.EfCore;
+using Postgre_Sql_Connection.Data;
 
-namespace PostgreSqlConnection
+namespace Postgre_Sql_Connection
 {
     public class Program
     {
@@ -10,7 +10,7 @@ namespace PostgreSqlConnection
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<PostreDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<PostgreDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
