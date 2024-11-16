@@ -3,9 +3,9 @@ using System.Reflection.PortableExecutable;
 
 namespace SqlWebApi.Models
 {
-    public class Comment
+    public class Comment : IEntity
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string? CommentTitle { get; set; }
         public RatingScale Rating { get; set; }
 

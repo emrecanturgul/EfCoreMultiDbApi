@@ -4,9 +4,9 @@ using System.Reflection;
 
 namespace SqlWebApi.Models
 {
-    public class Game
+    public class Game : IEntity 
     {
-        public int GameId { get; set; }
+        public Guid Id { get; set; }
         public string? GameName { get; set; }
         public decimal GamePrice { get; set; }
         public GamePlayMode PlayMode  { get; set; }
@@ -18,7 +18,6 @@ namespace SqlWebApi.Models
         //many to many relationship 
         public ICollection<Platform> Platforms { get; set; }
         public ICollection<Comment> Comments { get; set; }
-
-
+        
     }
 }
