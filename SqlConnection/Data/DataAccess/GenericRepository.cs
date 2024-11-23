@@ -17,7 +17,7 @@ namespace SqlWebApi.Data.DataAccess
     public class GenericRepository<T> : IRepository<T> where T : class , IEntity , new()
     {
         private readonly SqlDbContext _context;
-        private readonly DbSet<T> _table; 
+        protected readonly DbSet<T> _table; 
         public GenericRepository(SqlDbContext context)
         {
             _context = context;
