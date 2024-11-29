@@ -3,7 +3,10 @@ using SqlWebApi.Models;
 
 namespace SqlWebApi.Data.Repositories
 {
-    public class CompanyRepository : GenericRepository<Company>
+    public interface ICompanyRepository : IRepository<Company>
+    {
+    }
+    public class CompanyRepository : GenericRepository<Company>, ICompanyRepository
     {
         public CompanyRepository(SqlDbContext context) : base(context)
         {

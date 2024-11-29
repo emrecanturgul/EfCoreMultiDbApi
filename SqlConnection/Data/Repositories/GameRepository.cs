@@ -4,7 +4,10 @@ using SqlWebApi.Models;
 
 namespace SqlWebApi.Data.Repositories
 {
-    public class GameRepository :  GenericRepository<Game>
+    public interface IGameRepository : IRepository<Game>
+    {
+    }
+    public class GameRepository :  GenericRepository<Game>, IGameRepository
     {
         private readonly List<string> _saledGames; 
 

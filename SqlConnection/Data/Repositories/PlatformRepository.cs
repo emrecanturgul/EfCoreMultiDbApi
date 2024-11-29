@@ -2,8 +2,11 @@
 using SqlWebApi.Models;
 
 namespace SqlWebApi.Data.Repositories
-{
-    public class PlatformRepository : GenericRepository<Platform>
+{     
+    public interface IPlatformRepository : IRepository<Platform>
+    {
+    }
+    public class PlatformRepository : GenericRepository<Platform>, IPlatformRepository
     {
         public PlatformRepository(SqlDbContext context) : base(context) 
         {

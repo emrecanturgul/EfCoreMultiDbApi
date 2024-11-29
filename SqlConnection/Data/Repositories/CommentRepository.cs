@@ -3,7 +3,10 @@ using SqlWebApi.Models;
 
 namespace SqlWebApi.Data.Repositories
 {
-    public class CommentRepository : GenericRepository<Comment>
+    public interface ICommentRepository : IRepository<Comment>
+    {
+    }
+    public class CommentRepository : GenericRepository<Comment>, ICommentRepository
     {
         public CommentRepository(SqlDbContext context) : base(context)
         {
