@@ -14,10 +14,6 @@ namespace SqlWebApi.Data.Extensions {
             return services;
         }
 
-        public static void AddRepositoryServices(this IServiceCollection services)
-        {
-            // Register your repositories here
-            // e.g., services.AddScoped<IGameRepository, GameRepository>();
-        }
+      
     }
 }
