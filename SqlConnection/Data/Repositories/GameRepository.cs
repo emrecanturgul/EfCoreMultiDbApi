@@ -22,7 +22,7 @@ namespace SqlWebApi.Data.Repositories
         {
             return await _table.Where(game => _saledGames.Contains(game.GameName)).ToListAsync();  
         }
-        //Game specific methods
+       
 
     }
 }

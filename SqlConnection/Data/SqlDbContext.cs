@@ -13,7 +13,7 @@ namespace SqlWebApi.Data
         public DbSet<User> Users { get; set; } 
         public DbSet<Comment> Comments { get; set; } 
         public DbSet<Platform> Platforms { get; set; } 
-        public DbSet<MyEntity> MyEntities { get; set; }
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

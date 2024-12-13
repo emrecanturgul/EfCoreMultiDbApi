@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SqlWebApi.Data;
+using SqlWebApi.Data.Extensions;
 
 namespace SqlConnection
 {
@@ -20,6 +21,7 @@ namespace SqlConnection
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+            builder.Services.AddRepositoryServices(); 
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -30,7 +32,7 @@ namespace SqlConnection
             using (var scope = app.Services.CreateScope())
             {
                 var dbContext = scope.ServiceProvider.GetRequiredService<SqlDbContext>();
-                dbContext.Database.Migrate();  // Otomatik migration ve veritabaný güncelleme
+                dbContext.Database.Migrate();  
             }
             app.UseHttpsRedirection();
 
