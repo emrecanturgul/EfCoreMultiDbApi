@@ -19,9 +19,9 @@ namespace SqlConnection
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddDataAccessServices(); 
             var app = builder.Build();
-            builder.Services.AddRepositoryServices(); 
+            
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

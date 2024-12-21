@@ -9,8 +9,8 @@ namespace SqlWebApi.Models
         public string? CommentTitle { get; set; }
         public RatingScale Rating { get; set; }
 
-        public int GameId  { get; set; }
-        public int UserId { get; set; }
+        public Guid GameId  { get; set; }
+        public Guid UserId { get; set; }
         // one to many 
         public Game Game { get; set; }
         //one to many 
