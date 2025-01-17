@@ -2,12 +2,14 @@
 
 namespace SqlConnection.Controllers
 {
-    [Route("api/[Controller]")]
-    public class MyController :ControllerBase
+    [ApiController]
+    [Route("api/[controller]")]
+    public class MyController : ControllerBase
     {
-        public string Get()
+        [HttpGet]
+        public IActionResult StrGet()
         {
-            return "This is my controller"; 
+            return Ok("This is my controller"); 
         }
     }
 }
