@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlWebApi", "SqlConnection\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgre_Sql_Connection", "Postgre_Sql_Connection\Postgre_Sql_Connection.csproj", "{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{CEF2E84B-5A9E-437B-8E43-E73CEA20336B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CDE819D-0C12-40CA-8B4D-FE67FB6E19CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF2E84B-5A9E-437B-8E43-E73CEA20336B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF2E84B-5A9E-437B-8E43-E73CEA20336B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF2E84B-5A9E-437B-8E43-E73CEA20336B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF2E84B-5A9E-437B-8E43-E73CEA20336B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
